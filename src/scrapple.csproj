@@ -22,7 +22,12 @@
     <PackageTags>LANDIS-II;Landis;Extension;fire;suppression;ignitions;spread</PackageTags>
     <PackageLicenseUrl>https://github.com/LANDIS-II-Foundation/Extension-SCRAPPLE/blob/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>http://www.landis-ii.org</PackageProjectUrl>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>..\..\build\extensions</OutputPath>
+  </PropertyGroup>
+
 
   <ItemGroup>
     <PackageReference Include="Landis.Core" Version="2.0.0" />
